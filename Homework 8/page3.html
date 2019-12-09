@@ -1,0 +1,68 @@
+<html>
+    <title>Third Page</title>
+    <head>
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./styles/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+<script src="./styles/bootstrap-4.4.1-dist/js/jquery-3.4.1.min.js"></script>
+<script src="./styles/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    </head>
+    <script>
+    function Validate()
+    {
+      var name = document.getElementById("txtName").value;
+      if(name == "")
+      {
+        document.getElementById("txtName").style.backgroundColor = "red";
+      }
+      else {
+        document.getElementById("txtName").style.backgroundColor = "white";
+      }
+      var email = document.getElementById("txtEmail").value;
+      if(email == "")
+      {
+        document.getElementById("txtEmail").style.backgroundColor = "red";
+      }
+      else {
+        document.getElementById("txtEmail").style.backgroundColor = "white";
+      }
+      var check = document.getElementById("termCheck").checked;
+      if (check == false)
+      {
+        window.alert("You must accept the terms to proceed.")
+      }
+      else {
+        window.alert("Your submission has been accepted")
+      }
+    }
+    </script>
+    <body>
+        <h1>Lisa Yakubowski's Third Page</h1>
+
+        <h2>Contact Me</h2>
+        <br>
+        <table>
+         <tr>
+             <td>Name</td>
+             <td><input type="text" id="txtName"></td>
+         </tr>
+         <tr>
+             <td>Email</td>
+             <td><input type="text" id="txtEmail"></td>
+         </tr>
+         <tr>
+             <td colspan="2"><button class="btn btn-primary" id="btnSubmit" onClick="Validate();">Submit</button></td>
+         </tr>
+       </table>
+       <br>
+       <h3>Do you accept the terms of use?</h3>
+       <input type="checkbox" id="termCheck" value="yesCheck"> Yes
+       <br>
+       <br>
+        <a href="index.html">Page 1</a>
+        <br>
+        <a href="page2.html">Page 2</a>
+        <br>
+        <a href="mathGame.html">Math Game</a>
+    </body>
+</html>

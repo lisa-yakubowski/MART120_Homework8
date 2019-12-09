@@ -1,0 +1,20 @@
+h1{
+  color:blue;
+  background-color:white;
+}
+h2{
+  coloe:red;
+  background-color:white;
+}
+body{
+  background-image: url("./images/pawprints.jpg");
+  background-repeat: repeat-y repeat-x;
+}
+p{
+  background-color: white;
+  color:black;
+}
+span{
+  background-color: white;
+  color:blue;
+}
